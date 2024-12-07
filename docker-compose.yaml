@@ -1,0 +1,10 @@
+services:
+  simple-web-frontend:
+    build: .
+    command: python app.py
+    ports:
+      - 9000:8000
+  redis:
+    image: "redis:alpine"
+    ports:
+      - 6379
